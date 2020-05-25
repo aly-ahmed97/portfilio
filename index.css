@@ -113,21 +113,21 @@ header #intro div:hover
 
 main
 {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 article
 {
-    width: 90%;
+    width: 80%;
     height: 750px;
     padding: 20px;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 #about
 {
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 65%;
 }
 #about #abouttext
 {
@@ -216,72 +216,109 @@ article
 #work div .overlayBlack:hover
 {
     opacity: 0.5;
+    transition: all 0.5s ease;  
 }
 #contact
 {
+    width: 100%;
+    height: 670px;
+    background-image: linear-gradient(to bottom right, #008a45, #9ed4ad);
+}
+#contact #container
+{
+    margin: 0 auto;
+    width: 60%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
-    width: 70%;
 }
-#contact div
+#contact #container div
 {
-    border: 3px solid #26a75f;
+
     border-radius: 20px;
     height: 400px;
     align-self: center;
 }
-#contact #info
+#contact #container #info
 {
     padding: 10px 60px;
 }
-#contact #form form
+#contact #container #form form
 {
+    width: 300px;
     display: flex;
     flex-direction: column;
-    padding: 10px 60px;
 }
-#contact #form form h3
+#contact #container #form form h3
 {
     margin-bottom: 20px;
+    color: white;
 }
-#contact #form form input
+#contact #container #form form input
 {
     width: 300px;
     height: 40px;
     margin-bottom: 20px;
-    border: 1px solid #26a75f;
+    border: 1px solid white;
     border-radius: 10px;
     padding-left: 25px;
+    background: none;
+    color: white;
 }
-#contact #form form textarea
+#contact #container #form form input::placeholder
+{
+    color: white;
+}
+#contact #container #form form input:focus
+{
+    width: 320px;   
+}
+#contact #container #form form textarea
 {
     height: 80px;
+    width: 300px;
     resize: none;
     margin-bottom: 20px; 
-    border: 1px solid #26a75f;
+    border: 1px solid white;
     border-radius: 10px;
     padding-left: 25px;
+    background: none;
+    color: white;
 }
-#contact #form form #submit
+#contact #container #form form textarea::placeholder
 {
+    color: white;
+}
+#contact #container #form form textarea:focus
+{
+    width: 320px;
+}
+#contact #container #form form #submit
+{
+    width: 100px;
     background: none;
     padding-left: 0;
-    color: #26a75f;
+    color: white;
     font-size: 1.3em;
+    align-self: center;
 }
-#contact #info
+#contact #container #form form #submit:focus
 {
-    height: 200px;
+    width: 100px;
 }
-#contact #info ul
+#contact #container #info
+{   
+    color:white;    
+}
+#contact #container #info ul
 {
     list-style: none;
 }
-#contact #info ul li
+#contact #container #info ul li
 {
     margin: 20px;
 }
-#contact #info ul li i
+#contact #container #info ul li i
 {
     margin-right: 30px;
 }
