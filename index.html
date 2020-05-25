@@ -15,14 +15,19 @@
 		<div id="preload">
 			<img src="photos/background.jpg">
 			<img src="photos/cv.jpg">
+			<img src="photos/site1.jpg">
+			<img src="photos/site2.jpg">
+			<img src="photos/site3.jpg">
+			<img src="photos/site4.jpg">
+			<img src="photos/site5.jpg">
 		</div>
 		<header>
 			<nav>
 				<h1>Aly Ahmed's Portfolio</h1>
 				<ul>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Work</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 			<div id="intro">
@@ -41,34 +46,61 @@
 				</div>
 				<img id="aboutimage" alt="personal image" src="photos/cv.jpg">
 			</article>
-			<article>
-				<div><img alt="sample site" src="photo"></div>
-				<div><img alt="sample site" src="photo"></div>
-				<div><img alt="sample site" src="photo"></div>
-				<div><img alt="sample site" src="photo"></div>
-				<div><img alt="sample site" src="photo"></div>
-			</article>
-			<article>
+			<article id="work">
+				<h3>Work : </h3>
 				<div>
-					<form autocomplete="off" method="POST" name="contact" action="non">
-						<input type="text" name="name" placeholder="Name">
-						<input type="email" name="email" placeholder="example@ex.com">
-						<input type="text" name="subject" placeholder="subject">
-						<textarea  name="message" placeholder="message"></textarea>
-						<input type="submit" value="submit">
-					</form>
+					<a href="http:/www.google.com" target="_blank"><div class="overlayBlack">
+						<i class="fas fa-search-plus"></i>
+					</div></a>
+					<img alt="sample site" src="photos/site1.jpg">
 				</div>
 				<div>
-					<h3>Contact methods</h3>
+					<a href="http:/www.google.com" target="_blank"><div class="overlayBlack">
+						<i class="fas fa-search-plus"></i>
+					</div></a>
+					<img alt="sample site" src="photos/site2.jpg">
+				</div>
+				<div>
+					<a href="http:/www.google.com" target="_blank"><div class="overlayBlack">
+						<i class="fas fa-search-plus"></i>
+					</div></a>
+					<img alt="sample site" src="photos/site3.jpg">
+				</div>
+				<div>
+					<a href="http:/www.google.com" target="_blank"><div class="overlayBlack">
+						<i class="fas fa-search-plus"></i>
+					</div></a>
+					<img alt="sample site" src="photos/site4.jpg"></a>
+				</div>
+				<div>
+					<a href="http:/www.google.com" target="_blank"><div class="overlayBlack">
+						<i class="fas fa-search-plus"></i>
+					</div></a>	
+					<img alt="sample site" src="photos/site5.jpg">
+				</div>
+			</article>
+			<article id="contact">
+				<div id="form">
+					<form autocomplete="off" method="POST" name="contact" action="non">
+						<h3>Send me message :</h3>
+						<input required type="text" name="name" placeholder="Name">
+						<input required type="email" name="email" placeholder="E-mail">
+						<input required type="text" name="subject" placeholder="subject">
+						<textarea maxlength="250" name="message" placeholder="message"></textarea>
+						<input id="submit" type="submit" value="submit">
+					</form>
+				</div>
+				<div id="info">
+					<h3>Contact infromations</h3>
 					<ul>
-						<li> <i class="fas fa-phone"></i> <label>(0020) 0114255099</label> </p></li>
+						<li> <i class="fas fa-phone"></i><label>(+2) 0114255099</label> </p></li>
 						<li> <i class="far fa-envelope"></i> <label>aly.ahmed9711@gmail.com</label> </p></li>
 					</ul>	
 				</div>
 			</article>
 		</main>
 		<footer>
-			<p>Design & Built by Aly Ahmed</p>
+			<p>Design & Built by Aly Ahmed &copy; 2020</p>
 		</footer>
 		<scrtipt src="index.js"></scrtipt>
 	</body>
