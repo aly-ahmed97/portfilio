@@ -398,9 +398,18 @@ footer
 }
 @media (max-width: 575.98px) 
 {
+    header
+    {
+        height: 500px;
+    }
+    header #intro h2
+    {
+        font-size: 3em;
+    }
     #about
     {
         flex-direction: column;
+        flex-wrap: wrap;
     }
     #about #abouttext
     {
@@ -432,5 +441,23 @@ footer
     {
         transform: rotate(360deg);
         transition: all 0.5s ease; 
+    }
+    #work
+    {
+        grid-template-columns: 1fr;
+        height: 1250px; 
+    }
+    #work h3
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    #work div
+    {
+        width: 100%;
+    }
+    #work div img
+    {
+        width: 100%;  
     }
 }
