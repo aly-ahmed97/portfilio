@@ -43,7 +43,7 @@ header
 }
 nav
 {
-    position: fixed;
+    position: absolute;
     top : 0;
     width: 100%;
     height: 70px;
@@ -400,7 +400,7 @@ footer
 {
     header
     {
-        height: 500px;
+        height: 600px;
     }
     header #intro h2
     {
@@ -413,7 +413,7 @@ footer
     }
     #about #abouttext
     {
-        width: 90%;
+        width: 70%;
     }
     #about #aboutimage
     {   
@@ -426,7 +426,35 @@ footer
     }
     nav
     {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+    }
+    nav ul
+    {
+        flex-direction: column;
+        
+    }
+    nav ul li 
+    {
+        background-color: rgba(0,0,0,0.7);
+        padding: 2px;
+        margin: 2px;
+        text-align: center;
+    }
+    nav ul li:first-child
+    {
+        background: none;
+    }
+    nav ul li a
+    {
+        font-size: 1.2em ;
+        color: white;
+        text-decoration: none;
+    }
+    nav ul li a:hover
+    {
+        color: #26a75f;
     }
     #menu
     {
@@ -436,6 +464,7 @@ footer
         right: 0;
         margin: 10px;
         cursor: pointer;
+        color: #26a75f;
     }
     #menu:hover
     {
@@ -459,5 +488,9 @@ footer
     #work div img
     {
         width: 100%;  
+    }
+    .mobile
+    {
+        display: none;
     }
 }
