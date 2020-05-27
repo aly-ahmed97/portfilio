@@ -25,6 +25,9 @@
     box-sizing: border-box;
     font-family: 'Cairo', sans-serif , Arial;
 }
+html {
+    overflow-x: hidden;
+}
 #preload
 {
     display: none;
@@ -103,6 +106,7 @@ header #intro div
     background: rgba(255, 255, 255, 0.4);
     border-radius: 20px;
     cursor: pointer;
+    padding: 9px;
 }
 header #intro div a
 {
