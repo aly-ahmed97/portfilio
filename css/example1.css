@@ -1,0 +1,38 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif , Arial;
+}
+body
+{
+    background-color: rgba(0, 0, 0, 1);
+}
+nav
+{
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    text-align: right;
+
+}
+nav a
+{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+}
+#main
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+img
+{
+    height: 250px;
+    width: 250px;
+}

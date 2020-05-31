@@ -25,9 +25,6 @@
     box-sizing: border-box;
     font-family: 'Cairo', sans-serif , Arial;
 }
-html {
-    overflow-x: hidden;
-}
 #preload
 {
     display: none;
@@ -130,6 +127,12 @@ article
     height: 750px;
     padding: 20px;
     margin: 0 auto;
+    opacity: 0; 
+    transition: all 1.5s;
+}
+article.visible
+{
+    opacity: 1;
 }
 #about
 {
@@ -140,13 +143,11 @@ article
 #about #abouttext
 {
     width: 60%;
-    max-width: 500px;
-    min-width: 400px;
+    min-width: 350px;
     height: 400px;
     padding: 20px;
     align-self: center;
     font-size: 1.1em;
-    overflow-y: auto;
 }
 #about #abouttext h3
 {
@@ -156,7 +157,8 @@ article
 }
 #about #abouttext p
 {
-    margin-top: 10px;
+    margin: 10px;
+    line-height: 2em;
 }
 #about #aboutimage
 {   
