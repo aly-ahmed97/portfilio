@@ -31,6 +31,20 @@ nav a
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
 }
+#intro
+{
+    width: 100%;
+    height: 400px;
+    padding: 30px;
+}
+#intro h1
+{
+    color: white;
+}
+#intro p
+{
+    color: white;
+}
 img
 {
     height: 250px;
