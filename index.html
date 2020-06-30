@@ -3,111 +3,134 @@
 	<head>
 		<title>Aly Ahmed Portfolio</title>
 		<meta charset="utf-8">
-		<meta name="description" content="Front end software engineer , Aly Ahmed">
+		<meta name="description" content="Web developer , Aly Ahmed">
 		<meta name="robots" content="index,follow">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" href="photos/logo.png" type="image/png">
+		<!--<link rel="icon" href="photos/logo.png" type="image/png">-->
 		<link rel="stylesheet" href="css/index.css">
 		<link rel="stylesheet" href="css/normalize.css">
-		<script src="https://kit.fontawesome.com/4c0108f750.js" crossorigin="anonymous"></script>
-		<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
-	</head>
+		<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Overpass&subset=latin,latin-ext' rel='stylesheet' type='text/css'>	
+		</head>
 	<body>
 		<div id="preload">
+			<img src="photos/life.jpg">
+			<img src="photos/design.jpg">
 			<img src="photos/background.jpg">
-			<img src="photos/cv.jpg">
 			<img src="photos/site1.jpg">
 			<img src="photos/site2.jpg">
 			<img src="photos/site3.jpg">
-			<img src="photos/site4.jpg">
-			<img src="photos/site5.jpg">
 		</div>
-		<header>
-			<nav>
-				<h1>Aly Ahmed's Portfolio</h1>
-				<ul>
-					<li><i class="fas fa-bars" id="menu"></i></li>
-					<li class="mobile nava"><a href="#about">About</a></li>
-					<li class="mobile nava"><a href="#work">Work</a></li>
-					<li class="mobile nava"><a href="#contact">Contact</a></li>
+		<header id="home">
+			<nav class="nav">
+				<ul class="menu">
+					<li class="menu-element"><a href="#home">Home</a></li>
+					<li class="menu-element"><a href="#work">Previous work</a></li>
+					<li class="menu-element"><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
-			<div id="intro">
-				<h2>Hi, I'm Aly Ahmed</h2>
-				<p>Front End Software developer</p>
-				<div><a href="#contact">Get in Touch</a></div>
+			<hr class="menu-line">
+			<div class="hero-text">
+				<h1 id="hero-name">Aly Ahmed</h1>
+				<p 	id="hero-title">Web developer</p>
+				<p  id="hero-description">	
+					I'm a web developer with a passion for front end development and design.</br>
+					I'm currently a final year student pursuing a degree in electrical engineering.
+				</p>
 			</div>
 		</header>
-		<main>
-			<article id="about">
-				<div id="abouttext">
-					<h3>About me :</h3>
-					<p>Hey! My name is Aly Ahmed and I'm a web developer with a passion for front end development and design.</p>
-					<p>I'm currently a final year student at Ain-shams University pursuing a degree in electrical engineering.</p>
-				</div>
-				<img id="aboutimage" alt="personal image" src="photos/cv.jpg">
-			</article>
-			<div class="separation">
-			</div>
+		<main class="main">
 			<article id="work">
-				<h3>Work : </h3>
-				<div>
-					<a href="example1.html"><div class="overlayBlack">
-						<i class="fas fa-search-plus"></i>
-					</div></a>
-					<img alt="sample site" src="photos/pyramids.png">
-				</div>
-				<div>
-					<a href="http:/www.google.com" target="_blank"><div class="overlayBlack">
-						<i class="fas fa-search-plus"></i>
-					</div></a>
-					<img alt="sample site" src="photos/site2.jpg">
-				</div>
-				<div>
-					<a href="http:/www.google.com" target="_blank"><div class="overlayBlack">
-						<i class="fas fa-search-plus"></i>
-					</div></a>
-					<img alt="sample site" src="photos/site3.jpg">
-				</div>
-				<div>
-					<a href="http:/www.google.com" target="_blank"><div class="overlayBlack">
-						<i class="fas fa-search-plus"></i>
-					</div></a>
-					<img alt="sample site" src="photos/site4.jpg"></a>
-				</div>
-				<div>
-					<a href="http:/www.google.com" target="_blank"><div class="overlayBlack">
-						<i class="fas fa-search-plus"></i>
-					</div></a>	
-					<img alt="sample site" src="photos/site5.jpg">
+				<h2 class="title">Previous Work</h2>
+				<div class="wrapper">
+					<div class="arrow">
+						<img alt="arrow" class="left-arrrow" src="icons/arrow.png">
+					</div>
+					<div class="slide-card">
+						<a href="http:/www.google.com" target="_blank"><div class="overlayBlack">
+							<img alt="optic" src="icons/search.png">
+						</div></a>
+						<img alt="sample site" src="photos/site1.jpg">
+						<p>Website</p>
+					</div>
+					<div class="slide-card">
+						<a href="http:/www.google.com" target="_blank"><div class="overlayBlack">
+							<img alt="optic" src="icons/search.png">
+						</div></a>
+						<img alt="sample site" src="photos/site2.jpg">
+						<p>Website</p>
+					</div>
+					<div class="slide-card">
+						<a href="http:/www.google.com" target="_blank"><div class="overlayBlack">
+							<img alt="optic" src="icons/search.png">
+						</div></a>
+						<img alt="sample site" src="photos/site3.jpg">
+						<p>Website</p>
+					</div>
+					<div class="slide-card">
+						<a href="http:/www.google.com" target="_blank"><div class="overlayBlack">
+							<img alt="optic" src="icons/search.png">
+						</div></a>
+						<img alt="sample site" src="photos/site1.jpg"></a>
+						<p>Website</p>
+					</div>
+					<div class="arrow">
+						<img alt="arrow" class="right-arrow" src="icons/arrow.png">
+					</div>
+					<div class="dots">
+						<div class="black-dot active-dot"></div>
+						<div class="black-dot active-dot"></div>
+						<div class="black-dot active-dot"></div>
+						<div class="black-dot active-dot"></div>
+					</div>
 				</div>
 			</article>
-			<article id="contact">
+			<article class="Creative-section">
+				<div class="Creative ltr">
+					<img alt="creative design photo" src="photos/design.jpg">
+					<div class="Creative-text">
+						<div class="Creative-text-inside">
+							<p class="first-line">First :</p>
+							<p class="second-line">Comes</p>
+							<p class="special-line">The Design</p>
+						</div>
+					</div>
+				</div>
+				<div class="Creative rtl">
+					<img alt="creative design photo" src="photos/life.jpg">
+					<div class="Creative-text">
+						<div class="Creative-text-inside">
+							<p class="first-line">Then :</p>
+							<p class="second-line">Bring it to</p>
+							<p class="special-line">Life</p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</main>
+		<footer id="contact">
 				<div id="container">
 					<div id="form">
 						<form autocomplete="off" method="POST" name="contact" action="non">
 							<h3>Send me message :</h3>
 							<input required type="text" name="name" placeholder="Name">
-							<input required type="email" name="email" placeholder="E-mail">
+							<input required type="email" name="email" placeholder="Email">
 							<input required type="text" name="subject" placeholder="subject">
-							<textarea maxlength="250" name="message" placeholder="message"></textarea>
 							<input id="submit" type="submit" value="submit">
 						</form>
 					</div>
+					<hr id="mobile-hr">
 					<div id="info">
 						<h3>Contact infromations :</h3>
 						<ul>
-							<li> <i class="fas fa-phone"></i><label>(+2) 0114255099</label></li>
-							<li> <i class="far fa-envelope"></i><label>aly.ahmed9711@gmail.com</label></li>
+							<li><img class="icon" alt="phone-icon" src="icons/phone.png"><label>(+2) 01142250099</label></li>
+							<li><img class="icon" alt="phone-icon" src="icons/email.png"></i><label>aly.ahmed9711@gmail.com</label></li>
 						</ul>	
 					</div>
 				</div>
-			</article>
-		</main>
-		<footer>
-			<p>Design & Built by Aly Ahmed &copy; 2020</p>
+			<hr>
+			<p id="rights">By Aly Ahmed &copy; 2020, All rights reserved</p>
 		</footer>
-		<script src="js/jquery-3.5.1.min.js"></script>
 		<script src="js/index.js"></script>
 	</body>
 </html>
