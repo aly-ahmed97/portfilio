@@ -3,11 +3,10 @@ let buttons = document.getElementsByClassName("arrow"),
     dots    = document.getElementsByClassName("black-dot"),
     i = 0,
     x = 0,
-    y = 0,
     z = 0,
     S1 = window.matchMedia("(max-width: 1199.98px)"),
-    S2 = window.matchMedia("(max-width: 575.98px)");
-
+    S2 = window.matchMedia("(max-width: 767.98px)");
+screentest();
 function screentest()
 {
     if(S2.matches)
@@ -22,35 +21,31 @@ function screentest()
     {
         x = 3;
     }
-if(y !== x)
-{
-    for(i= x ; i < slides.length ; i++)
+    buttons[1].onclick =  function()
+    {
+        z++;
+        if(z === slides.length)
+        {
+            z = slides.length-1;
+        } 
+    }
+    buttons[0].onclick =  function()
+    {
+        z--;
+        if(z === -1)
+        {
+            z = 0;  
+        }
+    }
+    for(i= 0 ; i < slides.length ; i++)
     {
         slides[i].style.display = "none";
         dots[i].classList.remove("active-dot");
     }
-}
-}
-
-buttons[1].addEventListener("click",function()
-{
-    z++;
-    let a = 0; 
-    if ( z < (slides.length-x))
+    for(i = z ; i < (x+z) ; i++)
     {
-        for(i = 0 ; i < slides.length ; i++)
-        {
-            slides[i].style.display = "none";
-            dots[i].classList.remove("active-dot");
-        }
-        for(i = 0 ; i < (slides.length-x) ; i++)
-        {
-            a = i + z ;
-            console.log(a);
-            slides[a].style.display = "block";
-            dots[a].classList.add("active-dot");
-        } 
-    } 
-});
-
-screentest();
+        slides[i].style.display = "block";
+        dots[i].classList.add("active-dot");
+    }
+    setInterval(screentest,100);
+}
