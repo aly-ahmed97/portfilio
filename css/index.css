@@ -117,13 +117,12 @@ header .menu-line {
 header .hero-text {
   width: 850px;
   margin: auto;
-  margin-top: 170px;
+  margin-top: 130px;
 }
 
 header .hero-text #hero-name {
   font-size: 90px;
   color: #d3d3d3;
-  line-height: 0px;
   padding: 0px 15px;
 }
 
@@ -539,14 +538,14 @@ footer #rights {
   }
   header .hero-text {
     width: 400px;
-    margin-top: 150px;
+    margin-top: 130px;
   }
   header .hero-text #hero-name {
     font-size: 60px;
-    line-height: 15px;
   }
   header .hero-text #hero-title {
     margin-bottom: 70px;
+    line-height: 20px;
   }
   header .hero-text #hero-description {
     width: 100%;
