@@ -1,43 +1,60 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>example site 1</title>
+        <title>pyramids</title>
 		<meta charset="utf-8">
-		<meta name="description" content="example site 1,by Aly Ahmed">
+		<meta name="description" content="pyramids,by Aly Ahmed">
 		<meta name="robots" content="index,follow">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" href="photos/logo.png" type="image/png">
+		<!--<link rel="icon" href="photos/logo.png" type="image/png">-->
 		<link rel="stylesheet" href="css/example1.css">
-		<link rel="stylesheet" href="css/normalize.css">
 		<script src="https://kit.fontawesome.com/4c0108f750.js" crossorigin="anonymous"></script>
-		<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <header>
-			<nav>
-				<a href="index.html">Back To Portfilio</a>
+		<header>
+			<nav class="welcome">
+				<h1>Welcome To History</h1>
 			</nav>
 		</header>
-		<div id="main">
-			<section>
-				<article id="intro">
-					<h1>Egyptian pyramids</h1>
-					<p>The Egyptian pyramids are ancient pyramid-shaped masonry structures located in Egypt</p>
-				</article>
-				<article>
-					<h2>Loction</h2>
-					<iframe></iframe> <!--for the map api-->
-				</article>
-			</section>
-			<aside>
-				<article>
-					<img alt="pyramids of giza" src="photos/pyramids.png">
-				</article>
-				<article>
-					<a>on wiki</a>
-					<iframe></iframe> <!--for the pyramids video-->
-				</article>
-			</aside>
-		</div>
+		<main class="main">
+			<div class="container">
+				<img alt="pyramids photo" src="photos/pyramids.jpg">
+				<p>
+					All three of Giza's famed pyramids and their elaborate burial complexes were built during a frenetic period of construction, from roughly 2550 to 2490 B.C. The pyramids were built by Pharaohs Khufu (tallest), Khafre (background), and Menkaure (front).
+				</p>
+			</div>
+			<div class="informations">
+				<h3>Pyramids at Giza</h3>
+				<p>
+					The Giza Pyramids, built to endure an eternity, have done just that. The monumental tombs are relics of Egypt's Old Kingdom era and were constructed some 4,500 years ago.
+				</p>
+				<p>
+					Egypt's pharaohs expected to become gods in the afterlife. To prepare for the next world they erected temples to the gods and massive pyramid tombs for themselves—filled with all the things each ruler would need to guide and sustain himself in the next world.
+				</p>
+				<p>
+					Pharaoh Khufu began the first Giza pyramid project, circa 2550 B.C. His Great Pyramid is the largest in Giza and towers some 481 feet (147 meters) above the plateau. Its estimated 2.3 million stone blocks each weigh an average of 2.5 to 15 tons.
+				</p>
+				<p>
+					Khufu's son, Pharaoh Khafre, built the second pyramid at Giza, circa 2520 B.C. His necropolis also included the Sphinx, a mysterious limestone monument with the body of a lion and a pharaoh's head. The Sphinx may stand sentinel for the pharaoh's entire tomb complex.
+				</p>
+				<p>
+					The third of the Giza Pyramids is considerably smaller than the first two. Built by Pharaoh Menkaure circa 2490 B.C., it featured a much more complex mortuary temple.
+				</p>
+				<p>
+					Each massive pyramid is but one part of a larger complex, including a palace, temples, solar boat pits, and other features.
+				</p>
+			</div>
+			<div id="map">
+			</div>
+		</main>
+		<footer>
+			<p id="rights">By Aly Ahmed &copy; 2020, All rights reserved</p>
+		</footer>
+		<script
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARTLWL1njZM-OHecjLnHFQfkYpFmUnWS0&callback=initMap&libraries=&v=weekly"
+			defer
+		></script>
+		<script src="js/example1.js"></script>
     </body>
 </html>
