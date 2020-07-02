@@ -73,6 +73,131 @@ header nav h1 {
 .main #map {
   width: 100%;
   height: 500px;
+  z-index: 1;
+}
+
+.main .settings-section {
+  height: 50vh;
+  width: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 120px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+.main .settings-section .open-settings {
+  width: 50px;
+  height: 50px;
+  background-color: #ffd888;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.main .settings-section .open-settings img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.main .settings-section .open-settings img:hover {
+  -webkit-transform: rotateZ(360deg);
+          transform: rotateZ(360deg);
+}
+
+.main .settings-section .settings {
+  width: 211px;
+  height: 100%;
+  background-color: #ffd888;
+  border-radius: 0px 0px 0px 10px;
+}
+
+.main .settings-section .settings h3 {
+  font-size: 24px;
+  padding: 20px;
+  text-align: center;
+}
+
+.main .settings-section .settings .colors {
+  width: 200px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.main .settings-section .settings .colors .color {
+  width: 30px;
+  height: 30px;
+  border: 3px solid white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.main .settings-section .settings .colors .color:hover {
+  opacity: 1;
+}
+
+.main .settings-section .settings .colors .red {
+  background-color: red;
+}
+
+.main .settings-section .settings .colors .green {
+  background-color: green;
+}
+
+.main .settings-section .settings .colors .blue {
+  background-color: blue;
+}
+
+.main .settings-section .settings .colors .yellow {
+  background-color: yellow;
+}
+
+.main .settings-section .settings .colors .black {
+  background-color: black;
+}
+
+.main .settings-section .random-background h3 {
+  font-size: 17px;
+}
+
+.main .settings-section .random-background .option {
+  display: inline-block;
+  width: 80px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  border: 2px solid white;
+  margin: 11px;
+  cursor: pointer;
+}
+
+.main .settings-section .random-background .option p {
+  padding: 5px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.main .settings-section .random-background .option:hover {
+  background-color: black;
 }
 
 footer {
@@ -100,5 +225,21 @@ footer p {
   .main .container img {
     width: 95%;
   }
+}
+
+.active {
+  opacity: 1;
+}
+
+.not-active {
+  opacity: 0.5;
+}
+
+.hide {
+  right: -210px;
+}
+
+.show {
+  right: 0px;
 }
 /*# sourceMappingURL=example1.css.map */
