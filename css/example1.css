@@ -52,6 +52,7 @@ header nav h1 {
   width: 80%;
   margin: auto;
   padding-bottom: 100px;
+  position: relative;
 }
 
 .main .informations h3 {
@@ -68,6 +69,22 @@ header nav h1 {
 .main .informations p::first-letter {
   font-size: 24px;
   padding: 0px 5px;
+}
+
+.main .informations::before {
+  content: "";
+  background-image: url("../photos/back4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.25;
+  -webkit-box-shadow: inset 0px 0px 50px 50px white;
+          box-shadow: inset 0px 0px 50px 50px white;
 }
 
 .main #map {
@@ -174,29 +191,29 @@ header nav h1 {
   background-color: black;
 }
 
-.main .settings-section .random-background h3 {
+.main .settings-section .random-image h3 {
   font-size: 17px;
 }
 
-.main .settings-section .random-background .option {
+.main .settings-section .random-image .option {
   display: inline-block;
   width: 80px;
   height: 35px;
-  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 5px;
   border: 2px solid white;
   margin: 11px;
+  background-color: rgba(0, 0, 0, 0.7);
   cursor: pointer;
 }
 
-.main .settings-section .random-background .option p {
+.main .settings-section .random-image .option p {
   padding: 5px;
   color: white;
   text-align: center;
   cursor: pointer;
 }
 
-.main .settings-section .random-background .option:hover {
+.main .settings-section .random-image .option:hover {
   background-color: black;
 }
 

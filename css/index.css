@@ -183,6 +183,7 @@ header .hero-text #hero-description {
           box-shadow: 2px 2px 4px;
   font-family: inherit;
   position: relative;
+  z-index: 1;
 }
 
 .main #work .wrapper .slide-card a {
@@ -244,6 +245,7 @@ header .hero-text #hero-description {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  z-index: 3;
 }
 
 .main #work .wrapper .arrow img {
@@ -492,6 +494,7 @@ footer #rights {
   }
   .main #work {
     width: 90%;
+    height: 700px;
   }
   .main #work .wrapper {
     -ms-grid-columns: 8% 42% 42% 8%;
@@ -519,9 +522,6 @@ footer #rights {
     -ms-grid-columns: 10% 80% 10%;
         grid-template-columns: 10% 80% 10%;
   }
-  .main .Creative-section {
-    height: 768px;
-  }
   footer #container {
     padding: 10px 0px;
   }
@@ -533,15 +533,24 @@ footer #rights {
     background-color: #241e20;
     text-align: center;
   }
+  header .nav {
+    width: 320px;
+  }
+  header .nav .menu {
+    width: 320px;
+  }
+  header .nav .menu li a {
+    font-size: 23px;
+  }
   header .menu-line {
-    width: 350px;
+    width: 320px;
   }
   header .hero-text {
-    width: 400px;
-    margin-top: 130px;
+    width: 320px;
+    margin-top: 70px;
   }
   header .hero-text #hero-name {
-    font-size: 60px;
+    font-size: 50px;
   }
   header .hero-text #hero-title {
     margin-bottom: 70px;

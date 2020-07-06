@@ -149,6 +149,7 @@ header
                 box-shadow: 2px 2px 4px;
                 font-family: inherit;
                 position: relative;
+                z-index: 1;
                 a
                 {
                     width: 100%;
@@ -201,6 +202,7 @@ header
                 background-color: $bColor;
                 opacity: 0.5;
                 align-self: center;
+                z-index: 3;
                 img
                 {
                     width: 50px;
@@ -426,6 +428,7 @@ footer
                 #work
                 {
                     width: 90%;
+                    height: 700px;
                     .wrapper
                     {
                         grid-template-columns: 8% 42% 42% 8%;
@@ -467,10 +470,6 @@ footer
                     grid-template-columns: 10% 80% 10%;
                 }
             }
-            .Creative-section
-            {
-                height: 768px;
-            }
         }
     footer
     {
@@ -487,17 +486,31 @@ footer
         background-image: none;
         background-color: $bColor;
         text-align: center;
+        .nav
+        {
+            width: 320px;
+            .menu
+            {
+                width: 320px;
+                li
+                {
+                    a{
+                    font-size: $fontSize_XS+7;
+                }
+                }
+            }
+        }
         .menu-line
         {
-            width:350px;
+            width:320px;
         }
         .hero-text
         {
-            width: 400px;
-            margin-top: 130px;
+            width: 320px;
+            margin-top: 70px;
             #hero-name
             {
-                font-size: $fontSize_L+10;
+                font-size: $fontSize_L;
             }
             #hero-title
             {

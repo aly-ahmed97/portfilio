@@ -64,6 +64,7 @@ header
         width: 80%;
         margin: auto;
         padding-bottom: 100px;
+        position: relative;
         h3
         {
            font-size: $fontSize_M; 
@@ -80,6 +81,21 @@ header
                 font-size: $fontSize_S;
                 padding: 0px 5px;
             }
+        }
+        &::before
+        {
+            content: "";
+            background-image: url("../photos/back4.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: right;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0.25;
+            box-shadow: inset 0px 0px 50px 50px white;
         }
     }
     #map
@@ -171,7 +187,7 @@ header
                 }
             }
         }
-        .random-background
+        .random-image
         {   
             h3
             {
@@ -182,10 +198,10 @@ header
                 display: inline-block;
                 width: 80px;
                 height: 35px;
-                background-color: rgba(0,0,0,0.7);
                 border-radius: 5px;
                 border: 2px solid white;
                 margin: 11px;
+                background-color: rgba(0,0,0,0.7);
                 cursor: pointer;
                 p
                 {
